@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pp mori;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #27282e;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 50px,
+      #fff1 50px 51px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      /* to top,  */ transparent 0 50px,
+      #fff1 50px 51px
+    );
+
+  position: relative;
+}
+form {
+  background-color: white;
+  width: max-content;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 9px;
+  display: flex;
+  gap: 10px;
+}
+
+form input,
+button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  cursor: pointer;
+}
+
+form input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+form input::-webkit-color-swatch{
+border-radius: 50%;  
+}
+
+#list textarea {
+    all: unset;
+    color: white;
+    
+}
+
+#list .note {
+    background-color: #333;
+    width: max-content;
+    border-top: 30px solid yellow;
+    border-radius: 9px;
+    box-shadow: 0 20px 90px #000;
+    padding: 10px;
+    position: absolute;
+}
+
+
+#list .note span{
+    position: absolute;
+    bottom: 100%;
+    height: 30px;
+    right: 0;
+    padding: 5px 10px;
+    font-size:large;
+
+    cursor: pointer;
+}
+
