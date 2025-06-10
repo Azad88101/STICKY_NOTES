@@ -1,0 +1,10 @@
+
+{
+  "name": "STICKY NOTES",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Write down your daily routine, to-dos, and reminders — quick, easy, and always visible.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

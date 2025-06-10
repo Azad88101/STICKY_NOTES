@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>azad-sticky-notes</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./sticky-note.png" type="image/x-icon">
- 
-  </head>
-  <body>
-    <main>
-      <form action="">
-        <input type="color" name="" id="color" value="#f05c5c" />
-        <button type="button" id="createBtn">+</button>
-      </form>
-      <div id="list">
-        <!-- <div class="note">
-          <span class="close">X</span>
-          <textarea name="" rows="10"  cols="30" placeholder="Write content.." id=""></textarea
-          > -->
-        </div>
-      </div>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./sticky-note.png" type="image/x-icon">
+</head>
+<body>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Navigation Bar with Priority Labels -->
+  <nav>
+    <label>🔴 High Priority</label>
+    <label>🟡 Medium</label>
+    <label>🟢 Low</label>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Note Creation Form -->
+    <form id="noteForm">
+      <input type="color" id="color" value="#eeff00" />
+      <button type="button" id="createBtn">+</button>
+    </form>
+
+    <!-- Sticky Notes Container -->
+    <div id="list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
