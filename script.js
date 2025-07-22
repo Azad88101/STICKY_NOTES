@@ -2,12 +2,7 @@ let createBtn = document.getElementById("createBtn");
 let color = document.getElementById("color");
 let list = document.getElementById("list");
 
-
-
-
-
-
-//////                                                              Timer Elements 
+//////                                                              Timer Elements
 const timerInput = document.getElementById("timerInput");
 const startTimerBtn = document.getElementById("startTimerBtn");
 const pauseTimerBtn = document.getElementById("pauseTimerBtn");
@@ -17,12 +12,10 @@ const timerDisplay = document.getElementById("timerDisplay");
 let timerInterval;
 let timerSeconds = 0;
 let isTimerPaused = false;
-let alarmSound = new Audio(
-  "https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"
-);
+let alarmSound = new Audio("alarm.mp3");
 alarmSound.loop = true;
 
-/////                                                                 Stopwatch Elements 
+/////                                                                 Stopwatch Elements
 const startStopwatchBtn = document.getElementById("startStopwatchBtn");
 const stopStopwatchBtn = document.getElementById("stopStopwatchBtn");
 const resetStopwatchBtn = document.getElementById("resetStopwatchBtn");
@@ -31,7 +24,7 @@ const stopwatchDisplay = document.getElementById("stopwatchDisplay");
 let stopwatchMilliseconds = 0;
 let stopwatchInterval;
 
-//////                                                                   Timer Functions 
+//////                                                                   Timer Functions
 function formatTimerDisplay(totalSeconds) {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
@@ -82,6 +75,8 @@ function startTimer() {
 
 function pauseTimer() {
   clearInterval(timerInterval);
+  alarmSound.pause();
+  alarmSound.currentTime = 0;
   isTimerPaused = true;
   startTimerBtn.textContent = "Resume";
   startTimerBtn.style.display = "inline-block";
@@ -103,7 +98,7 @@ function resetTimer() {
   resetTimerBtn.style.display = "none";
 }
 
-///////                                                                              Stopwatch Functions 
+///////                                                                              Stopwatch Functions
 function formatStopwatchDisplay(ms) {
   const totalSec = Math.floor(ms / 1000);
   const msDisplay = Math.floor((ms % 1000) / 10);
@@ -155,7 +150,7 @@ startStopwatchBtn.addEventListener("click", startStopwatch);
 stopStopwatchBtn.addEventListener("click", stopStopwatch);
 resetStopwatchBtn.addEventListener("click", resetStopwatch);
 
-////                                                                                      Sticky Notes 
+////                                                                                      Sticky Notes
 function createNote(colorValue, content = "", pos = { x: 50, y: 50 }) {
   let newNote = document.createElement("div");
   newNote.classList.add("note");
@@ -206,7 +201,7 @@ document.addEventListener("input", (e) => {
   }
 });
 
-////                                                                                      Dragging 
+////                                                                                      Dragging
 let cursor = { x: null, y: null };
 let note = { dom: null, x: null, y: null };
 
