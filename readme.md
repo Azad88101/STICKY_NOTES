@@ -1,6 +1,6 @@
 # 🗒️ Sticky Notes: Your Browser's New Best Friend! 🚀
 
-Unlock your productivity with our modern, minimal, and interactive sticky notes app, designed specifically for your browser! 🌐
+Unlock your productivity with our modern, minimal, and interactive sticky notes app, designed specifically for your browser! 
 
 **Write, Organize, and Stay on Top of Your Tasks**
 
@@ -9,6 +9,8 @@ Effortlessly jot down your daily routine, to-dos, and reminders. Our app ensures
 **Boost Your Productivity with Timers and Stopwatch**
 
 Take your productivity to the next level with our built-in timer and stopwatch. Set countdowns, track your progress, and stay motivated with every tick! ⏰⏱️
+
+## ☢ Working Link:- [azad-sticky-notes](https://azad-sticky-notes.netlify.app/) 
 
 ---
 
@@ -102,7 +104,7 @@ Stay organized, boost your productivity, and never forget a task again — all f
 
 ## 📸 Preview
 
-![Sticky Notes Screenshot](sticky-note.png)
+![Sticky Notes Screenshot](LANDING.png)
 
 ---
 
@@ -123,4 +125,6 @@ Let’s make sticky notes even stickier! 🚀
 ---
 
 ## 📄 License
-Azad
+This project is licensed under Azad's Organization License.
+
+Feel free to use it for your learning, and don’t forget to ⭐ star the repo if you find it helpful!
