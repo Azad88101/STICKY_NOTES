@@ -2,18 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sticky Notes</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="./sticky-note.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./sticky-note.png" type="image/x-icon" />
 </head>
 <body>
-
   <!-- Navigation Bar with Priority Labels -->
   <nav>
     <label>🔴 High Priority</label>
     <label>🟡 Medium</label>
     <label>🟢 Low</label>
+
+    <div id="timeStopwatchContainer">
+      <!-- Timer -->
+      <div id="timer">
+        <input type="text" id="timerInput" placeholder="min or 0.5=30s"/>
+        <button id="startTimerBtn">Start</button>
+        <button id="pauseTimerBtn" style="display: none;">Pause</button>
+        <button id="resetTimerBtn" style="display: none;">Reset</button>
+        <span id="timerDisplay">00:00</span>
+      </div>
+
+      <!-- Stopwatch -->
+      <div id="stopwatch">
+        <button id="startStopwatchBtn">Start</button>
+        <button id="stopStopwatchBtn" style="display: none;">Stop</button>
+        <button id="resetStopwatchBtn" style="display: none;">Reset</button>
+        <span id="stopwatchDisplay">00:00.00</span>
+      </div>
+    </div>
   </nav>
 
   <!-- Main Content Area -->
